@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  database:
+    image: postgres
+    container_name: oneplusproblem
+    environment:
+      POSTGRES_DB: oneplus
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    restart: on-failure
+    ports:
+      - "5432:5432"
